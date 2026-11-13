@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QC lab1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <div id="radiobutton" class="element">
+            <h1>1. Radiobutton</h1>
+            <p>Використовується для вибору одного варіанта з кількох запропонованих.</p>
+            <div>
+                <h3>Choice 1</h3>
+                <input type="radio" id="radio1" name="radio_choice" value="Radio 1">
+                <label for="radio1">Radio 1</label>
+            </div>
+            <div>
+                <h3>Choice 2</h3>
+                <input type="radio" id="radio2" name="radio_choice" value="Radio 2">
+                <label for="radio2">Radio 2</label>
+                <input type="radio" id="radio3" name="radio_choice" value="Radio 3">
+                <label for="radio3">Radio 3</label>
+            </div>
+        </div>
+
+        <div id="checkbox" class="element">
+            <h1>2. Checkbox</h1>
+            <p>За допомогою цього елемента можна позначити один або декілька варіантів одночасно.</p>
+            <div>
+                <h3>Choice 1</h3>
+                <input type="checkbox" id="checkbox1" name="check_choice1" value="Checkbox 1">
+                <label for="checkbox1">Checkbox 1</label>
+            </div>
+            <div>
+                <h3>Choice 2</h3>
+                <input type="checkbox" id="checkbox2" name="check_choice2" value="Checkbox 2">
+                <label for="checkbox2">Checkbox 2</label>
+                <input type="checkbox" id="checkbox3" name="check_choice3" value="Checkbox 3">
+                <label for="checkbox3">Checkbox 3</label>
+            </div>
+        </div>
+
+        <div id="text-input" class="element">
+            <h1>3. Text input</h1>
+            <p>Текстове поле, у яке користувач може вводити різну інформацію, наприклад ім’я або адресу.</p>
+            <div>
+                <h3>Input 1</h3>
+                <label for="input1">Input 1:</label>
+                <input type="text" id="input1" name="input1"><br><br>
+            </div>
+            <div>
+                <h3>Input 2</h3>
+                <label for="input2">Input 2:</label>
+                <input type="text" id="input2" name="input2"><br><br>
+                <label for="input3">Input 3:</label>
+                <input type="text" id="input3" name="input3"><br><br>
+            </div>
+        </div>
+
+        <div id="tabs" class="element">
+            <h1>4. Tabs</h1>
+            <p>Вкладки, що допомагають організувати вміст сторінки та швидко перемикатися між розділами.</p>
+            <div class="tab">
+                <button class="tablinks" onclick="openTab(event, 'Tab1')" id="defaultOpen">Tab 1</button>
+                <button class="tablinks" onclick="openTab(event, 'Tab2')">Tab 2</button>
+                <button class="tablinks" onclick="openTab(event, 'Tab3')">Tab 3</button>
+                <button class="tablinks" onclick="openTab(event, 'Tab4')">Tab 4</button>
+            </div>
+
+            <div id="Tab1" class="tabcontent">
+                <h3>Tab 1</h3>
+                <p>Tab 1 text</p>
+            </div>
+
+            <div id="Tab2" class="tabcontent">
+                <h3>Tab 2</h3>
+                <p>Tab 2 text</p>
+            </div>
+
+            <div id="Tab3" class="tabcontent">
+                <h3>Tab 3</h3>
+                <p>Tab 3 text</p>
+            </div>
+
+            <div id="Tab4" class="tabcontent">
+                <h3>Tab 4</h3>
+                <p>Tab 4 text</p>
+                <p>Texttexttexttext</p>
+            </div>
+        </div>
+
+        <div id="button-style" class="element">
+            <h1>5. Button</h1>
+            <p>Кнопка, натискання на яку запускає певну дію, наприклад надсилання форми.</p>
+            <div>
+                <button class="buttons">Button 1</button>
+                <button class="buttons">Button 2</button>
+            </div>
+        </div>
+
+        <div id="label-style" class="element">
+            <h1>6. Text Label</h1>
+            <p>Текстовий підпис, який вказує на призначення поля або іншого елемента інтерфейсу.</p>
+            <div class="labels">
+                <span class="label-success">Success</span> <br>
+                <span class="label-warning">Warning</span> <br>
+                <span class="label-error">Error</span> <br>
+            </div>
+        </div>
+
+        <div id="link" class="element">
+            <h1>7. Link</h1>
+            <p>Використовується для переходу на інші вебсторінки, сайти або окремі розділи.</p>
+            <div class="links">
+                <a href="https://youtu.be/dQw4w9WgXcQ?si=dT2HpKu5UgN2Mfvu" class="link-style">Youtube 1</a>
+                <a href="https://youtube.com/shorts/qA4U8ymI888?si=O3GP5kGgySg96hgx" class="link-style">Youtube 2</a>
+            </div>
+        </div>
+
+        <div id="tooltip" class="element">
+            <h1>8. Tooltip</h1>
+            <p>Невелика підказка, що з’являється при наведенні курсора на елемент.</p>
+            <div class="tooltips">
+                <div class="tooltip">Hover here
+                    <span class="tooltiptext">Tooltip text</span>
+                </div>
+            </div>
+        </div>
+
+        <div id="tooltip" class="element">
+            <h1>9. Dropdown</h1>
+            <p>Випадаючий список із кількома варіантами, серед яких користувач може обрати потрібний.</p>
+            <div class="dropdown">
+                <select>
+                    <option value="option1">Option 1</option>
+                    <option value="option2">Option 2</option>
+                    <option value="option3">Option 3</option>
+                </select>
+            </div>
+        </div>
+
+        <div id="data-grid" class="element">
+            <h1>10. Data grid</h1>
+            <p>Представляє інформацію у вигляді таблиці з рядками та стовпцями для зручного перегляду й порівняння
+                даних.</p>
+
+            <table class="data-grid">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>City</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Anna</td>
+                        <td>21</td>
+                        <td>Kyiv</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Max</td>
+                        <td>24</td>
+                        <td>LA</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Kate</td>
+                        <td>19</td>
+                        <td>Dnipro</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("defaultOpen").click();
+        function openTab(evt, tabName) {
+
+            var i, tabcontent, tablinks;
+
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+</body>
+
+</html>
